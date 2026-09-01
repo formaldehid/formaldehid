@@ -7,12 +7,12 @@
 <p>
   <a href="https://www.linkedin.com/in/markosabec/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&labelColor=0b0b23" alt="LinkedIn" /></a>
   <a href="mailto:marko@sabec.si"><img src="https://img.shields.io/badge/Email-6C3EF5?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0b0b23" alt="Email" /></a>
-  <a href="https://crates.io/crates/quantforge"><img src="https://img.shields.io/badge/crates.io-6C3EF5?style=for-the-badge&logo=rust&logoColor=white&labelColor=0b0b23" alt="crates.io" /></a>
-  <a href="https://piggygang.net"><img src="https://img.shields.io/badge/piggygang.net-ff5fa2?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0b0b23" alt="piggygang.net" /></a>
   <a href="https://x.com/PiggySolGang"><img src="https://img.shields.io/badge/X-0b0b23?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
 </p>
 
-Rust engineer, 18+ years shipping production backends — trading systems, Solana infrastructure and distributed services — for teams including **Rain**, **MetaWealth** and **BT Group**. Creator of **QuantForge**, a deterministic CLI-first trading framework in Rust: `#![forbid(unsafe_code)]`, zero `unwrap()` in src *and* tests across ~10.6k lines of which roughly half are tests, decimal-only arithmetic with no `f64` anywhere, and a dry-run mode that is structural rather than a flag — the engine is constructed without a trading venue, so it physically cannot reach an order endpoint. Currently building the **Piggy Gang** stack: a Rust NFT indexer on actix-web and Postgres 17 behind a frozen OpenAPI 3.1 contract, plus five Next.js apps that ship green against that contract. I optimize for determinism, contract-first boundaries and the smallest dependency tree that can do the job — the wallet-facing apps reach Solana without `@solana/web3.js` or the wallet-adapter tree.
+Rust engineer, 18+ years building backends — trading systems, Solana infrastructure and distributed services for **Rain**, **MetaWealth** and **BT Group**.
+
+These days I build two things: **QuantForge**, a trading framework where a backtest gives you the same answer every single time you run it, and **Piggy Gang**, a Solana NFT ecosystem with a Rust indexer underneath. I like determinism, clean boundaries between the parts, and the shortest dependency list that does the job.
 
 </div>
 
@@ -24,36 +24,34 @@ Rust engineer, 18+ years shipping production backends — trading systems, Solan
 
 <a href="https://github.com/quantforge-rs/quantforge"><img src="assets/quantforge-help.svg" width="840" alt="Terminal output of quantforge --help, listing the data, backtest, trade and monitor commands" /></a>
 
-**Deterministic CLI-first market data ingestion, backtesting and controlled live trading in Rust. There is no UI — the CLI is the product.**
+**A trading framework for Rust. Pull in market data, backtest a strategy, run it live — all from the terminal.**
 
 <p>
-  <a href="https://crates.io/crates/quantforge"><img src="https://img.shields.io/crates/v/quantforge?style=for-the-badge&logo=rust&color=6C3EF5&labelColor=0b0b23" alt="crates.io version" /></a>
-  <a href="https://docs.rs/quantforge"><img src="https://img.shields.io/docsrs/quantforge?style=for-the-badge&color=6C3EF5&labelColor=0b0b23&logo=docsdotrs&logoColor=white" alt="docs.rs" /></a>
-  <a href="https://github.com/quantforge-rs/quantforge/blob/main/LICENSE"><img src="https://img.shields.io/crates/l/quantforge?style=for-the-badge&color=6C3EF5&labelColor=0b0b23" alt="License" /></a>
-  <img src="https://img.shields.io/badge/MSRV-1.85-6C3EF5?style=for-the-badge&logo=rust&logoColor=white&labelColor=0b0b23" alt="MSRV 1.85" />
-  <img src="https://img.shields.io/badge/edition-2024-7C3AED?style=for-the-badge&logo=rust&logoColor=white&labelColor=0b0b23" alt="Rust edition 2024" />
+  <a href="https://quantforge.rs"><img src="https://img.shields.io/badge/quantforge.rs-6C3EF5?style=for-the-badge&logo=rust&logoColor=white&labelColor=0b0b23" alt="quantforge.rs" /></a>
+  <a href="https://github.com/quantforge-rs"><img src="https://img.shields.io/badge/quantforge--rs-181717?style=for-the-badge&logo=github&logoColor=white" alt="github.com/quantforge-rs" /></a>
 </p>
 <p>
+  <img src="https://img.shields.io/crates/v/quantforge?style=for-the-badge&logo=rust&color=6C3EF5&labelColor=0b0b23" alt="Version 0.2.0" />
+  <a href="https://docs.rs/quantforge"><img src="https://img.shields.io/docsrs/quantforge?style=for-the-badge&color=6C3EF5&labelColor=0b0b23&logo=docsdotrs&logoColor=white" alt="docs.rs" /></a>
+  <a href="https://github.com/quantforge-rs/quantforge/blob/main/LICENSE"><img src="https://img.shields.io/crates/l/quantforge?style=for-the-badge&color=6C3EF5&labelColor=0b0b23" alt="License" /></a>
   <a href="https://github.com/quantforge-rs/quantforge"><img src="https://img.shields.io/github/stars/quantforge-rs/quantforge?style=for-the-badge&color=6C3EF5&labelColor=0b0b23&logo=github&logoColor=white" alt="Stars" /></a>
-  <a href="https://github.com/quantforge-rs/quantforge/commits/main"><img src="https://img.shields.io/github/last-commit/quantforge-rs/quantforge?style=for-the-badge&color=7C3AED&labelColor=0b0b23&logo=git&logoColor=white" alt="Last commit" /></a>
   <a href="https://github.com/quantforge-rs/quantforge/actions/workflows/ci.yml"><img src="https://github.com/quantforge-rs/quantforge/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
-  <a href="https://github.com/quantforge-rs/quantforge/actions/workflows/gitleaks.yml"><img src="https://github.com/quantforge-rs/quantforge/actions/workflows/gitleaks.yml/badge.svg?branch=main" alt="gitleaks" /></a>
 </p>
 
 </div>
 
-- **Dry-run is structural, not a flag.** In dry-run the engine is constructed with `None` as its `TradingVenue` — there is no code path to an order endpoint. Live requires `--mode live`, a typed confirmation and credentials from the environment, and production Binance hosts are marked `(PRODUCTION)` in both the prompt and the logs.
-- **A backtest is a pure function of (config, candles, strategy)** — no clock, no RNG, no I/O, repeat runs bit-identical. Strategies see closed bars only, and intent fills at the *next* bar's open: the no-look-ahead rail.
-- **Decimal arithmetic, no `f64` anywhere.** SQLite stores decimals as `TEXT`; "optimizing" that column to `REAL` silently corrupts PnL. `Option<Decimal>` means *the exchange did not report* — never a fabricated zero.
-- **Resume-identity checks refuse to resume** when market, strategy, params or mode differ, so a dry-run position can never leak into live trading.
-- **`#![forbid(unsafe_code)]`, zero `unwrap()` in src and tests**, a 3-OS CI matrix run `--locked`, CodeQL, full-history gitleaks scanning, 16 byte-locked CLI help snapshots, and a hand-written mock Binance server for a fully offline end-to-end tier.
-- **The `Strategy` trait is deliberately FFI-friendly** — object-safe, no generics, plain data in and out, never calls back into the engine — so foreign-language strategies are a design target, not an afterthought.
+- **Dry-run can't trade, by construction.** It isn't a flag you might forget — in dry-run the engine has no exchange attached at all.
+- **Backtests are reproducible.** The same data and settings give the same result every run. No clock, no randomness, no network.
+- **No floating point for money.** Everything is decimal, because `f64` quietly loses cents.
+- **It refuses the wrong resume.** Change the market, the strategy or the mode and it stops, so a paper position can never turn into a real one.
+- **Built to be trusted with money.** No `unsafe`, no `unwrap()`, half the codebase is tests, CI on Linux, macOS and Windows.
+- **Strategies don't have to be Rust.** The interface is plain data in and plain data out, so other languages can plug in.
 
 <div align="center">
 
-**→ [github.com/quantforge-rs/quantforge](https://github.com/quantforge-rs/quantforge)** · `cargo install quantforge`
+**[quantforge.rs](https://quantforge.rs)** · **[github.com/quantforge-rs](https://github.com/quantforge-rs)** · `cargo install quantforge`
 
-<sub>Engineering software. Not investment advice, does not recommend trades, does not promise profitability.</sub>
+<sub>Engineering software. Not investment advice, and no promise of profit.</sub>
 
 </div>
 
@@ -67,41 +65,43 @@ Rust engineer, 18+ years shipping production backends — trading systems, Solan
 <img src="assets/piggy-girl-gang.png" width="240" alt="Piggy Girl Gang collection cover" />
 <img src="assets/piggy-token.png" width="180" alt="$PIGGY token logo" />
 
-**A Solana NFT ecosystem: four collections, a Rust indexer, and five Next.js apps behind one frozen contract.**
+**Four NFT collections on Solana, a Rust indexer, and five web apps — all built in the open.**
 
 <p>
-  <a href="https://github.com/piggygang/indexer"><img src="https://img.shields.io/badge/Rust-0b0710?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" /></a>
+  <a href="https://piggygang.net"><img src="https://img.shields.io/badge/piggygang.net-ff5fa2?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0b0710" alt="piggygang.net" /></a>
+  <a href="https://github.com/piggygang"><img src="https://img.shields.io/badge/piggygang-181717?style=for-the-badge&logo=github&logoColor=white" alt="github.com/piggygang" /></a>
+  <a href="https://discord.gg/8SjGR8Srvz"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=0b0710" alt="Discord" /></a>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/Rust-0b0710?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
   <img src="https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white&labelColor=0b0710" alt="Solana" />
   <img src="https://img.shields.io/badge/Postgres%2017-4169E1?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=0b0710" alt="Postgres 17" />
   <img src="https://img.shields.io/badge/Next.js-0b0710?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <a href="https://piggygang.net"><img src="https://img.shields.io/badge/piggygang.net-ff5fa2?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0b0710" alt="piggygang.net" /></a>
-  <a href="https://discord.gg/8SjGR8Srvz"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=0b0710" alt="Discord" /></a>
 </p>
 
 </div>
 
-- **Contract-first across repo boundaries.** The indexer's frozen `openapi/v1.yaml` (OpenAPI 3.1, 11 operations) is the contract of record; the explorer vendors it, generates its typed client from it, and CI fails the build on drift between spec and committed types. A contract change is always two commits — indexer first, then `pnpm sync:spec`.
-- **The frontend ships and deploys green before its backend exists** — the explorer runs against a compile-checked in-process mock served through the same generated client, with a Prism container as the spec-faithful second opinion. One env var flips it to the real API.
-- **Ownership correctness is enforced by the database, not by application code.** A GiST `EXCLUDE` constraint on `ownership_history` makes two open ownership intervals for one asset structurally impossible. Keyset cursors throughout, never offset; weak `ETag` + `If-None-Match` → `304`.
-- **Facet queries benchmark at p50 ≤ 40 ms** against a < 100 ms acceptance target — three active trait types over 10k assets at 33 ms, text search at 5 ms — on synthetic Piggy-scale data, with the scaling model written down rather than assumed.
-- **Radical dependency minimalism as a security posture.** DressMe and Raffles reach Solana through `@wallet-standard/app` alone — no `@solana/web3.js`, no wallet-adapter tree, no Buffer polyfill in the bundle. No user key or user-signed transaction ever touches a server: the browser builds, the wallet signs and broadcasts, the app only watches the signature.
-- **Trust boundaries drawn on purpose.** DressMe asks the RPC only *which* tokens a wallet holds, never what they are — traits and rarity always come from committed files. Raffles was re-scoped to free-entry after review against Slovenia's Games of Chance Act, with three named invariants: no consideration ever, published rules per raffle enforced by a required `rules_uri`, and 18+ with prize taxes.
-- **Digital preservation.** The collections' original art host `shdw-drive.genesysgo.net` no longer resolves; this org holds what may be the only surviving copy of the official art, re-hosted to R2 and Vercel Blob.
+- **One spec runs the whole stack.** The indexer's OpenAPI file is the source of truth; the explorer generates its client from it, and CI fails if the two drift apart.
+- **The frontend shipped before the backend.** It runs against a mock built from that same spec — one environment variable switches it to the real API.
+- **The database enforces the rules.** A Postgres constraint makes it impossible for one NFT to have two owners at the same time.
+- **Search is quick.** Filtering by traits across 10,000 NFTs comes back in about 35 ms.
+- **Three dependencies talk to Solana.** No web3.js, no wallet-adapter. Keys never reach a server — the browser signs, the app just watches.
+- **We kept the art.** The collections' original image host went dark; these repos hold what may be the only complete copy left.
 
-| Repo | Lang | What it is | Live |
+| Repo | Lang | What it does | Live |
 |---|---|---|---|
-| [`indexer`](https://github.com/piggygang/indexer) | Rust | NFT indexer + REST API — DAS backfill and live streaming into attributes, owners and full transaction history; registry-driven, so any collection can be added later | — |
-| [`explorer`](https://github.com/piggygang/explorer) | TypeScript | Public explorer — faceted attribute search, owner lookup, per-NFT transaction history | [explorer.piggygang.net](https://explorer.piggygang.net) |
-| [`dressme`](https://github.com/piggygang/dressme) | TypeScript | Dress-up app — holders customize their collectible with layered traits and download the result | [dressme.piggygang.net](https://dressme.piggygang.net) |
-| [`raffles`](https://github.com/piggygang/raffles) | TypeScript | Free raffles for holders of the three Piggy collections — nobody ever pays to enter | [raffles.piggygang.net](https://raffles.piggygang.net) |
-| [`alpha-art`](https://github.com/piggygang/alpha-art) | TypeScript | alpha.art returning as an open-source Solana NFT exchange | [alpha.art](https://alpha.art) |
-| [`website`](https://github.com/piggygang/website) | TypeScript | The hub — apps and art for the whole gang, start anywhere | [piggygang.net](https://piggygang.net) |
+| [`indexer`](https://github.com/piggygang/indexer) | Rust | Indexes every Piggy NFT — traits, owners and full history — and serves them over a REST API | — |
+| [`explorer`](https://github.com/piggygang/explorer) | TypeScript | Search the collections by trait, look up a wallet, read an NFT's history | [explorer.piggygang.net](https://explorer.piggygang.net) |
+| [`dressme`](https://github.com/piggygang/dressme) | TypeScript | Dress your piggy up in any traits you like and download the picture | [dressme.piggygang.net](https://dressme.piggygang.net) |
+| [`raffles`](https://github.com/piggygang/raffles) | TypeScript | Free raffles for holders — nobody ever pays to enter | [raffles.piggygang.net](https://raffles.piggygang.net) |
+| [`alpha-art`](https://github.com/piggygang/alpha-art) | TypeScript | alpha.art coming back as an open-source Solana marketplace | [alpha.art](https://alpha.art) |
+| [`website`](https://github.com/piggygang/website) | TypeScript | The hub — every app and collection in one place | [piggygang.net](https://piggygang.net) |
 
 <div align="center">
 
-**→ [github.com/piggygang](https://github.com/piggygang)**
+**[piggygang.net](https://piggygang.net)** · **[github.com/piggygang](https://github.com/piggygang)**
 
-<sub>Piggy SOL Gang (10,000, Metaplex Token Metadata) · Piggy Girl Gang (5,000) · Piggy Gang (10,000, Metaplex Core — same piggies, meaner art) · Pig Mud (2,073) · $PIGGY</sub>
+<sub>Piggy SOL Gang (10,000) · Piggy Girl Gang (5,000) · Piggy Gang (10,000 — same piggies, meaner art) · Pig Mud (2,073) · $PIGGY</sub>
 
 </div>
 
@@ -111,12 +111,11 @@ Rust engineer, 18+ years shipping production backends — trading systems, Solan
 
 <div align="center"><b>🌍 Slovenia — CET/CEST, <code>Europe/Ljubljana</code></b></div>
 
-🔸 **Currently maintaining:** [QuantForge](https://github.com/quantforge-rs/quantforge) — deterministic, CLI-first trading systems framework in Rust. Binance Spot and SQLite today; Bybit, restart reconciliation, Postgres and parameter sweeps on the roadmap.<br/>
-🔸 **Currently building:** the [Piggy Gang](https://github.com/piggygang) stack — a Rust indexer on actix-web + sqlx + Postgres 17, and five Next.js apps behind one frozen OpenAPI contract.<br/>
-🔸 **Specialty:** deterministic backends — decimal-only arithmetic, no-look-ahead execution, structural safety rails, and tests that are half the codebase rather than an afterthought.<br/>
-🔸 **Blockchain:** Solana — Metaplex Token Metadata and Metaplex Core, Helius DAS backfill and live streaming, Wallet Standard in the browser with no key ever leaving it.<br/>
-🔸 **Infrastructure:** rustls everywhere so no `libssl` reaches the runtime image, multi-stage `cargo-chef` builds onto `debian:bookworm-slim` running non-root, one Dockerfile that builds any workspace binary via `ARG BIN`, project config as code.<br/>
-🔸 **Ask me about:** why a backtest must be a pure function, why `Option<Decimal>` beats a zero, why the RPC should never be asked what you own, and why a contract change is always two commits.
+🔸 **Right now:** [QuantForge](https://github.com/quantforge-rs) — Binance and SQLite today, Bybit and Postgres next — and the [Piggy Gang](https://github.com/piggygang) stack.<br/>
+🔸 **Good at:** backends that behave predictably — exact arithmetic, no look-ahead, and safety you can't switch off by accident.<br/>
+🔸 **Solana:** Token Metadata and Core, Helius backfill and live streaming, wallets that sign in the browser and nowhere else.<br/>
+🔸 **Infrastructure:** small hardened containers, one Dockerfile for a whole workspace, config kept as code.<br/>
+🔸 **Ask me about:** why a backtest should be a pure function, and why changing an API contract is always two commits.
 
 <hr/>
 
