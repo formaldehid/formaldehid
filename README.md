@@ -1,13 +1,15 @@
-<img src="assets/banner.jpg" width="880" alt="Marko Sabec — Rust Engineer. Solana, Trading Systems, Distributed Infrastructure. Trusted by Rain, MetaWealth and BT Group. 18+ years of experience. Open-source creator of QuantForge." />
+<div align="center">
+  <img src="assets/banner.svg" width="880" alt="Marko Sabec — Rust Engineer. Solana, Trading Systems, Distributed Infrastructure. Trusted by Rain, MetaWealth and BT Group. 18+ years of experience. Open-source creator of QuantForge." />
+</div>
 
 <div align="center">
 
 <h2>Hi, I'm Marko 👋</h2>
 
 <p>
-  <a href="https://www.linkedin.com/in/markosabec/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&labelColor=0b0b23" alt="LinkedIn" /></a>
-  <a href="mailto:marko@sabec.si"><img src="https://img.shields.io/badge/Email-6C3EF5?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0b0b23" alt="Email" /></a>
-  <a href="https://x.com/PiggySolGang"><img src="https://img.shields.io/badge/X-0b0b23?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://www.linkedin.com/in/markosabec/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&labelColor=15171A" alt="LinkedIn" /></a>
+  <a href="mailto:marko@sabec.si"><img src="https://img.shields.io/badge/Email-E8874D?style=for-the-badge&logo=gmail&logoColor=white&labelColor=15171A" alt="Email" /></a>
+  <a href="https://x.com/PiggySolGang"><img src="https://img.shields.io/badge/X-15171A?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
 </p>
 
 Rust engineer, 18+ years building backends — trading systems, Solana infrastructure and distributed services for **Rain**, **MetaWealth** and **BT Group**.
@@ -101,9 +103,9 @@ Four NFT collections on Solana, a Rust [indexer](https://github.com/piggygang/in
 <h2 align="center">⚒️ Languages · Frameworks · Tools ⚒️</h2>
 
 <div align="center">
-  <img src="https://go-skill-icons.vercel.app/api/icons?i=rust,actix,solana,postgres,sqlite,redis,docker&perline=7" alt="Rust, Actix, Solana, Postgres, SQLite, Redis, Docker" />
+  <img src="assets/skill-icons-1.svg" alt="Rust, Actix, Solana, Postgres, SQLite, Redis, Docker" />
   <br/>
-  <img src="https://go-skill-icons.vercel.app/api/icons?i=typescript,nextjs,react,tailwind,githubactions,linux,grafana&perline=7" alt="TypeScript, Next.js, React, Tailwind, GitHub Actions, Linux, Grafana" />
+  <img src="assets/skill-icons-2.svg" alt="TypeScript, Next.js, React, Tailwind, GitHub Actions, Linux, Grafana" />
 </div>
 
 <hr/>
@@ -119,7 +121,7 @@ Four NFT collections on Solana, a Rust [indexer](https://github.com/piggygang/in
 <hr/>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=formaldehid&background=0b0b23&border=6C3EF5&stroke=6C3EF5&ring=7C3AED&fire=7C3AED&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=7C3AED&sideLabels=a5a3c0&dates=6f6c9e&disable_animations=true" alt="Contribution streak" />
+  <img src="https://streak-stats.demolab.com/?user=formaldehid&background=15171A&border=E8874D&stroke=E8874D&ring=E8874D&fire=E8874D&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=E8874D&sideLabels=B3B9C0&dates=7D8590&disable_animations=true" alt="Contribution streak" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=formaldehid&theme=nord_dark" alt="Most-used languages by commit" />
 </div>
 
